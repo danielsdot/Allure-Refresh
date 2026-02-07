@@ -1,11 +1,12 @@
-/*		Trilium Notes Next 0.100.0
+/*		Trilium Notes Next 0.101.3
         Essa é minha alteração do tema encontrado no https://github.com/JadeVane/Allure
         Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure */
 
 /* Lista de Tarefas
-- Fixar o header juntamento com scroll
 - Ajustar o titulo e icones do header
 - Arrumar a visibilidade do botão de configuração rápida da árvore de notas
+- Ajustar tamanho do menu de edição da nota
+- Arrumar a sombra de notas encriptadas para deixa mais suaves
 */
 
 @keyframes reveal {
@@ -417,6 +418,11 @@ body #recent-changes-dialog .modal-dialog-scrollable .modal-body {
 
 body .form-control {
     border: var(--border-standard);
+}
+
+body input.note-title {
+    background: var(--main-background-color);
+    padding: 10px;
 }
 
 body .nav-tabs {
@@ -912,6 +918,12 @@ body .tab-row-widget .note-tab .note-tab-wrapper,
 body .tab-row-widget .note-new-tab {
     position: relative;
 }
+body .tab-row-widget .note-tab .note-tab-icon {
+    display: none;
+}
+body .component.tab-history-navigation-buttons {
+    display: none;
+}
 
 body .tab-row-widget .tab-row-widget-container {
     display: flex;
@@ -1092,7 +1104,7 @@ body .cm-s-default .cm-builtin {
 }
 
 body .title-row {
-    margin: 32px 0 16px;
+    margin: 20px 0 20px;
     line-height: 4em;
 }
 
@@ -1184,12 +1196,25 @@ body #right-pane {
 
 body #right-pane .card-header {
     border-radius: 0;
-    padding: 6px 12px;
+    padding: 16px !important;
     border-bottom: var(--border-light);
 }
 
 body #right-pane .card-body {
-    padding: 12px;
+    padding: 24px;
+    height: 91.5vh;
+}
+
+body #right-pane {
+    height: 100%;
+}
+
+body .toc li {
+    margin: 4px;
+    font-size: .8em;
+    line-height: 1.6em;
+    list-style-type: disc;
+}
 }
 
 body .toc-widget {
@@ -1198,13 +1223,6 @@ body .toc-widget {
 
 body .toc-widget .toc>ol {
     padding-left: 24px;
-    list-style-type: disc;
-}
-
-body .toc-widget .toc li {
-    font-size: .8em;
-    line-height: 1.6em;
-    margin-bottom: 8px;
     list-style-type: disc;
 }
 
@@ -1238,7 +1256,6 @@ body .ck-content .table table {
 
 body .ck-content .table table td,
 body .ck-content .table table th {
-    padding: 8px 12px !important;
     height: unset !important;
     border-color: var(--color-text-inconspicuous);
 }
@@ -1494,10 +1511,10 @@ body #center-pane .split-note-container-widget>.type-code {
     border-radius: var(--border-radius-standard);
 }
 
-/* "Comentei" esse por causa do CTRL+F bugado*/
+/* "Comentei" esse por causa do CTRL+F bugado
 body #center-pane .split-note-container-widget>div>div {
     overflow: unset !important;
-}
+}*/
 
 body #center-pane .split-note-container-widget .scrolling-container {
     contain: size;
@@ -1653,6 +1670,10 @@ body .split-note-container-widget>.component>.component:nth-of-type(7) {
     overflow: visible !important;
 }
 
+.ck-content .todo-list {
+    margin-bottom: 0px;
+}
+
 .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input:before {
     border: 1px solid var(--color-text-primary);
 }
@@ -1674,6 +1695,6 @@ div.scrolling-container {
 }
 
 div.promoted-attributes-widget {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
