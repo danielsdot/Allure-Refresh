@@ -3,10 +3,9 @@
         Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure */
 
 /* Lista de Tarefas
+- Fixar o header juntamento com scroll
 - Ajustar o titulo e icones do header
 - Arrumar a visibilidade do botão de configuração rápida da árvore de notas
-- Ajustar tamanho do menu de edição da nota
-- Arrumar a sombra de notas encriptadas para deixa mais suaves
 */
 
 @keyframes reveal {
@@ -229,7 +228,11 @@ body .fancytree-custom-icon {
 }
 
 span.fancytree-node.protected > span.fancytree-custom-icon {
-    filter: drop-shadow(0px 0px 5px #FFFFFF55);
+    filter: drop-shadow(0px 0px 0px #FFFFFF00);
+}
+
+body .note-title-widget input.note-title.protected {
+    text-shadow: none;
 }
 
 body .title-bar-buttons div button {
@@ -301,8 +304,18 @@ body .tree-item-button:hover {
     border: var(--border-transparent);
 }
 
+body div.tree-actions{
+    border-radius: 0px !important;
+    width: 100%;
+    inset-inline-end: 0px !important;
+    border-top: 1px solid var(--main-border-color) !important;
+    border: none;
+    padding: 8px;
+}
+
 div.tree {
     height: 95vh;
+    padding-top: 0px;
 }
 
 body a,
@@ -420,6 +433,12 @@ body .form-control {
     border: var(--border-standard);
 }
 
+body form.protected-session-password-form {
+    padding: 16px;
+    background: var(--left-pane-background-color);
+    border-radius: 8px;
+}
+
 body input.note-title {
     background: var(--main-background-color);
     padding: 10px;
@@ -463,6 +482,10 @@ body .note-revisions-dialog .dropdown .note-revision-list .dropdown-item {
     margin: 4px 0;
     border-radius: var(--border-radius-standard);
     border: none !important;
+}
+
+body .dropdown-item {
+    height: 100%;
 }
 
 body .note-revision-title-buttons {
@@ -877,7 +900,7 @@ body .fancytree-node.fancytree-expanded .fancytree-expander:before {
 }
 
 body button.tree-floating-button {
-    display: none;
+    
 }
 
 body .unhoist-button.bx.tree-item-button,
