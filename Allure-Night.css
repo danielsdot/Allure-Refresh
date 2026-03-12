@@ -1,12 +1,7 @@
-/*		Trilium Notes Next 0.101.3
-        Essa é minha alteração do tema encontrado no https://github.com/JadeVane/Allure
-        Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure */
-
-/* Lista de Tarefas
-- Fixar o header juntamento com scroll
-- Ajustar o titulo e icones do header
-- Arrumar a visibilidade do botão de configuração rápida da árvore de notas
-- Arrumar altura e amostragem dos paneis quando conteúdo novo do tipo painel de titulos, atributos da nota ultrapassa a tela e alguns botões ficam fora
+/*		
+Trilium Notes Next 0.101.3
+Essa é minha alteração do tema encontrado no https://github.com/JadeVane/Allure
+Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure 
 */
 
 @keyframes reveal {
@@ -900,6 +895,18 @@ body .fancytree-node.fancytree-expanded .fancytree-expander:before {
     top: 0;
 }
 
+body .fancytree-expander,
+body .tree-item-button{
+    padding: 8px;
+    margin-left: 4px;
+}
+
+body .fancytree-expander:hover,
+body .tree-item-button:hover {
+    background-color: var(--hover-item-background-color) !important;
+    border-radius: 8px !important;
+}
+
 body button.tree-floating-button {
     
 }
@@ -1231,7 +1238,8 @@ body #right-pane .card-header {
 
 body #right-pane .card-body {
     padding: 24px;
-    height: 91.5vh;
+    height: 92%;
+    position: absolute;
 }
 
 body #right-pane {
