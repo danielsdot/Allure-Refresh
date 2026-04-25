@@ -198,6 +198,14 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       -moz-osx-font-smoothing: grayscale;
   }
   
+  body .fontawesome-icons {
+      font-family: "fontawesome-icons-regular", "fontawesome-icons-brands", "fontawesome-icons-solid", "fontawesome-icons-v4", var(--font-icons) !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
   body ::-webkit-scrollbar {
       width: 12px;
       height: 12px;
@@ -845,7 +853,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       box-shadow: none;
       border-bottom: var(--border-light);
       height: var(--height-top-bar);
-      padding: 0 14px;
+      padding: 0 16px 0 0;
       font-size: 14px !important;
       margin-left: 1px;
   }
@@ -1747,9 +1755,10 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   
   body .quick-search.input-group.input-group-sm.component:before {
       font-family: var(--font-icons) important;
-      padding: 4px;
-      content: "\f002";
+      padding: 8px 8px 8px 16px;
+      content: "🔍︎";
       align-self: center;
+      opacity: 50%;
   }
   
   /*
