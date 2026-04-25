@@ -1,4 +1,4 @@
-/*Trilium Notes Next 0.102.1
+/*Trilium Notes Next 0.101.3
 Essa é minha alteração do tema encontrado no https://github.com/JadeVane/Allure
 Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
 
@@ -18,6 +18,26 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   @font-face {
       font-family: 'trilium-allure-icons';
       src: url('/custom/Allure-Icons.woff2') format('woff2');
+  }
+  
+  @font-face {
+      font-family: 'fontawesome-icons-regular';
+      src: url('/custom/fa-regular-400.woff2') format('woff2');
+  }
+  
+  @font-face {
+      font-family: 'fontawesome-icons-brands';
+      src: url('/custom/fa-brands-400.woff2') format('woff2');
+  }
+  
+  @font-face {
+      font-family: 'fontawesome-icons-solid';
+      src: url('/custom/fa-solid-900.woff2') format('woff2');
+  }
+  
+  @font-face {
+      font-family: 'fontawesome-icons-v4';
+      src: url('/custom/fa-v4compatibility.woff2') format('woff2');
   }
   
   @font-face {
@@ -92,6 +112,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       --shadow-standard: 0px 1px 6px -1px var(--color-background-accent);
       --shadow-accented: 2px 2px 5px -2px #666;
       --font-headers: Noto Sans CJK SC, 'Source Sans Pro', 'Liberation Sans', Helvetica Neue, Microsoft YaHei, Sans-serif;
+      --font-icons: 'fontawesome-icons-regular', 'fontawesome-icons-solid', 'fontawesome-icons-brands', 'fontawesome-icons-v4', boxicons,'trilium-allure-icons', var(--font-body);
       --font-body: var(--font-headers);
       --font-code: 'Fira Code', 'Source Code Pro', Courier, Monospace;
       --spacing-content-small: .4em;
@@ -170,7 +191,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   }
   
   body .trilium-allure-icons {
-      font-family: "trilium-allure-icons" !important;
+      font-family: var(--font-icons) !important;
       font-size: 16px;
       font-style: normal;
       -webkit-font-smoothing: antialiased;
@@ -697,7 +718,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   }
   
   body #launcher-pane .launcher-button {
-      font-family: boxicons,'trilium-allure-icons', var(--font-body) !important;
+      font-family: var(--font-icons) !important;
       font-size: 1.2em;
       padding: 8px;
       margin: 6px 8px;
@@ -981,13 +1002,17 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   
   /* Criação de abas semelhantes com navegadores */
   
+  body .tab-row-widget-scrolling-container {
+      margin-left: 24px;
+  }
+  
   body .tab-row-widget {
       background-color: transparent;
   }
   
-  body .tab-row-widget-container {
+  /*body .tab-row-widget-container {
       left: 24px !important;
-  }
+  }*/
   
   body .tab-row-widget .note-tab .note-tab-wrapper {
       border-radius: 4px;
@@ -1221,7 +1246,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   }
   
   body .title-row {
-      margin: 20px 0 20px;
+      margin: 8px 0;
       /*line-height: 4em;*/ /* Dropdown menu de notas estáva muito grande, Desativei */
   }
   
@@ -1705,12 +1730,29 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       padding-right: 8px;
       border-radius: var(--border-radius-standard);
   }
-  /*Quick search
+  /*Quick search*/
+  
+  .quick-search.input-group.input-group-sm.component {
+      border-bottom: var(--border-light);
+  }
+  
   body .quick-search {
       padding: 0;
       height: var(--height-top-bar);
   }
   
+  body .input-group-sm>.form-control {
+      border-radius: 0 !important;
+  }
+  
+  body .quick-search.input-group.input-group-sm.component:before {
+      font-family: var(--font-icons) important;
+      padding: 4px;
+      content: "\f002";
+      align-self: center;
+  }
+  
+  /*
   body .quick-search .dropdown-menu {
       max-height: unset;
       color: var(--color-text-inconspicuous) !important;
@@ -1814,9 +1856,9 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       width: 100%;
   }
   
-  div.scrolling-container {
+  /*div.scrolling-container {
       top: 10px;
-  }
+  }*/
   
   div.promoted-attributes-widget {
       margin-top: 5px;
