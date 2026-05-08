@@ -360,6 +360,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       padding: 8px;
       margin-bottom: 8px;
       background-color: #262626aa;
+      backdrop-filter: blur(2px);
   }
   
   div.tree {
@@ -1789,6 +1790,7 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
       width: 20%;
       z-index: 999;
       margin-top: 8px;
+      backdrop-filter: blur(2px);
   }
   
   body .input-group-sm>.form-control {
