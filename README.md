@@ -9,7 +9,7 @@
 - An attempt to create an intuitive interface
 - Credits also to: [Font Awesome](https://fontawesome.com/)
 
-# Installation
+# [Install 🔽](https://github.com/danielsdot/Allure-Refresh/releases/download/Early/Allure.Refresh.v1_0.zip)
 ![Steps](./resources/steps.png)
 ## 1. Recommended 👍
 1. Download [`Allure-Refresh.zip`](https://github.com/danielsdot/Allure-Refresh/releases/download/Early/Allure.Refresh.v1_0.zip) in the [release page](https://github.com/danielsdot/Allure-Refresh/releases/latest), then go back to Trilium and right-click on any note and select "Import to note"
