@@ -1,5 +1,5 @@
-[Original Theme Repository](https://github.com/JadeVane/Allure)
-> Tested on: [TriliumNext 0.102.1](https://github.com/TriliumNext/Trilium/releases/tag/v0.102.1) with new layout, but not completed :) <br>
+**Allure Refresh is a modification of another theme call by [Allure by JadeVane](https://github.com/JadeVane/Allure) to use on Trilium Notes** 
+> Tested on: [TriliumNext 0.102.1](https://github.com/TriliumNext/Trilium/releases/tag/v0.102.1) with the new layout, but not completed :) <br>
 > I suspect that can be different for others devices and resolutions, try it and tell me how it goes.
 
 ## Preview
