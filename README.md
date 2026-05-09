@@ -8,6 +8,7 @@
 - Glass effects
 - Alot of Rounded corners
 - An attempt to create an intuitive interface
+- Credits also to: [Font Awesome](https://fontawesome.com/)
 
 # Installation
 ## 1. Recommended 👍
