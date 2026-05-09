@@ -1,7 +1,7 @@
 [Original Theme Repository](https://github.com/JadeVane/Allure)
 > Tested on: [TriliumNext 0.102.1](https://github.com/TriliumNext/Trilium/releases/tag/v0.102.1) but not completed :)
 
-> I suspect that can be different for others devices, so try it and tell me how it goes.
+> I suspect that can be different for others devices and resolutions, try it and tell me how it goes.
 
 ## Preview
 ![Screenshot](./resources/screenshot2.png)
