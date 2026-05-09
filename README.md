@@ -6,7 +6,7 @@
 
 # Installation
 ## 1. Recommended 👍
-1. Download `Allure-Refresh.zip` in the release page, then go back to Trilium and right-click on any note and select "Import to note"
+1. Download `Allure-Refresh.zip` in the [release page](https://github.com/danielsdot/Allure-Refresh/releases), then go back to Trilium and right-click on any note and select "Import to note"
 2. Select the file you just downloaded and **uncheck Safe Import**, then click "Import"
 > How to upgrade?
 > Delete the theme file and re-import the latest version.
