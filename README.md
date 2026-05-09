@@ -1,16 +1,16 @@
 [Original Theme Repository](https://github.com/JadeVane/Allure)
-> Tested on: [TriliumNext 0.102.1](https://github.com/TriliumNext/Trilium/releases/tag/v0.102.1) with new layout, but not completed :)
-
+> Tested on: [TriliumNext 0.102.1](https://github.com/TriliumNext/Trilium/releases/tag/v0.102.1) with new layout, but not completed :) <br>
 > I suspect that can be different for others devices and resolutions, try it and tell me how it goes.
 
 ## Preview
-![Screenshot](./resources/screenshot2.png)
+![Preview-Screenshot](./resources/preview-screenshot.png)
 - Glass effects
 - Alot of Rounded corners
 - An attempt to create an intuitive interface
 - Credits also to: [Font Awesome](https://fontawesome.com/)
 
 # Installation
+![Steps](./resources/steps.png)
 ## 1. Recommended 👍
 1. Download `Allure-Refresh.zip` in the [release page](https://github.com/danielsdot/Allure-Refresh/releases), then go back to Trilium and right-click on any note and select "Import to note"
 2. Select the file you just downloaded and **uncheck Safe Import**, then click "Import"
