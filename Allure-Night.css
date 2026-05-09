@@ -1,6 +1,8 @@
-/*Trilium Notes Next 0.101.3
+/* Version: 09-05-2026 */
+
+/* Trilium Notes Next 0.102.1
 Essa é minha alteração do tema encontrado no https://github.com/JadeVane/Allure
-Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
+Feito por https://github.com/danielsdot/Allure-Refresh */
 
 @keyframes reveal {
     0% {
@@ -9,10 +11,6 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
     100% {
       opacity: 100%;
     }
-  }
-  
-  body .excalidraw {
-      background-color: var(--main-background-color);
   }
   
   @font-face {
@@ -710,7 +708,12 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   
   body #launcher-pane {
       width: fit-content !important;
-      padding: 4px 0;
+      padding: 4px;
+      margin-right: 4px;
+  }
+  
+  body div#horizontal-main-container {
+      background-color: var(--launcher-pane-background-color);
   }
   
   body #launcher-pane>.spacer {
@@ -1868,6 +1871,10 @@ Feito por https://github.com/danielsdot/TriliumNotes-Theme-Allure*/
   body .input-group-text.input-clearer-button.bx.bx-x,
   body .input-group-text.show-recent-notes-button.bx.bx-time {
       padding: 8px 4px;
+  }
+  
+  body.zen .close-zen-container { 
+      top: 16px !important;
   }
   
   body .note-detail .ck-content p {
