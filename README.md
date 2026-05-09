@@ -3,7 +3,7 @@
 > I suspect that can be different for others devices and resolutions, try it and tell me how it goes.
 
 ## Preview
-![Preview-Screenshot](./resources/preview-screenshot.png)
+![Preview-Screenshot](./resources/preview-screenshotfix.png)
 - Glass effects
 - Alot of Rounded corners
 - An attempt to create an intuitive interface
